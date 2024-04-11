@@ -12,7 +12,7 @@ import utils.stroke
 
 ## Side bar Menu
 with st.sidebar:
-    selected = option_menu('HealthAI Predictive Suite',
+    selected = option_menu('💉 HealthAI Predictive Suite',
                           
                           ['Home',
                            'Breast Cancer Prediction',
@@ -42,7 +42,7 @@ else:
         
         badge(type="twitter", name="aakashmohole")
         ## Start
-        st.title("HealthAI Predictive Suite")
+        st.title("🧠 HealthAI Predictive Suite")
 
         st.subheader("""
                     The "HealthAI Predictive Suite" is an application designed to provide predictive analytics in the field of healthcare.
