@@ -14,7 +14,7 @@ def main():
             c11, c12 = st.columns(2)
             c13, c14 = st.columns(2)
             c15 = st.columns(1)
-            
+
             with c1:
                 age = st.text_input("Age of person",value=0)
             with c2:
@@ -125,7 +125,12 @@ def main():
                 
             with c15:
                 survival_months = st.number_input('Enter Survival Months', value=6)
-            st.form_submit_button(label= 'Predict')
+            
+
+            submitted = st.form_submit_button("Submit")
+            if submitted:
+                st.write("slider")
+
         
 if __name__ == '__main__':
     main()
