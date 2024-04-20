@@ -39,8 +39,12 @@ else:
     home, about, contact, deployment = st.tabs(["Home", "About Us", "Contact Us", "Deployment"])
     
     with home:
-        
         badge(type="twitter", name="aakashmohole")
+        '''
+            [![Repo](https://badgen.net/badge/icon/GitHub?icon=github&label)](https://github.com//AakashMohole) 
+        '''
+        st.markdown("<br>",unsafe_allow_html=True)
+        
         ## Start
         st.title("🧠 HealthAI Predictive Suite")
 
@@ -54,7 +58,7 @@ else:
                 """)
 
 
-        st.image('images/surgery.jpg')
+        st.image('images/image2.png')
 
 
         st.subheader('1. **Objective**:')
@@ -143,6 +147,3 @@ else:
                     # Send the message (you can implement the sending logic here)
                     st.success("Your message has been sent successfully. We'll get back to you soon.")
 
-
-
-        
