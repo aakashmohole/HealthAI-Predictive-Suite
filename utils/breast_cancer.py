@@ -10,7 +10,6 @@ def perdicton_func(age, race, material, tstage, nstage, sixstage, differentiate,
     return prediction 
 
 
-
 def main():
     ## Tabes 
     Prediction, Data_info, Visualization = st.tabs(["Prediction", "Dataset Overview", "Visualization"])
