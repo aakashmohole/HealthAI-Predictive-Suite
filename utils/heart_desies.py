@@ -2,8 +2,12 @@ import streamlit as st
 import pickle
 import pandas as pd
 
-# model = open("Models/heart_desies_rfmodel.pkl", "rb") 
-# classifier  = pickle.load(model)
+model = open("Models/heart_desies_rfmodel.pkl", "rb") 
+classifier  = pickle.load(model)
+
+def perdicton_func(age, gender, cp, trestbps,chol, fbs, restecg, thalch, exang, oldpeak,slope, ca, thal):
+    prediction = classifier.predict([[age, gender, cp, trestbps,chol, fbs, restecg, thalch, exang, oldpeak,slope, ca, thal]])
+    return prediction
 
 def main():
     ## Tabes 
@@ -74,9 +78,9 @@ def main():
                 'Exercise induced angina ',
                 ('Yes', 'No'))
             if exang_option == 'No':
-                fruits = 0  
+                exang = 0  
             else:
-                fruits = 1
+                exang = 1
         
         with c10:
             oldpeak = st.number_input('ST depression induced by exercise relative to rest', value=2.3)
@@ -105,7 +109,86 @@ def main():
             elif thal_option == 'Normal':
                 thal = 2
             else: thal =3
+            
+        result = 0   
+        if st.button("Predict", type="primary"):
+            result = perdicton_func(age, gender, cp, trestbps,chol, fbs, restecg, thalach, exang, oldpeak,slope, ca, thal)
+            if result == 0:
+                st.success("The patient is Normal!")
+            else:
+                st.warning("The patient have Heart desies!")   
 
-    
+    with Data_info:
+        # Add title to the page
+        st.title("Data Info page")
+
+        # Add subheader for the section
+        st.subheader("View Data")
+
+        # Create an expansion option to check the data
+        with st.expander("View Raw data"):
+            df = pd.read_csv("D://ML Project//HealthAI Predictive Suit//v1.0//Heart Desies prediction//heart.csv")
+            st.dataframe(df)
+            st.subheader("This Dataset After Preprocessing")
+        
+        # Create a section to columns values
+        # Give subheader
+        st.subheader("Columns Description:")
+
+        # Create a checkbox to get the summary.
+        if st.checkbox("View Summary"):
+            st.dataframe(df.describe().T)
+
+        # Create multiple check box in row
+        col_name, col_dtype, col_data = st.columns(3)
+
+        # Show name of all dataframe
+        with col_name:
+            if st.checkbox("Column Names"):
+                st.dataframe(df.columns)
+
+        # Show datatype of all columns 
+        with col_dtype:
+            if st.checkbox("Columns data types"):
+                dtypes = df.dtypes.apply(lambda x: x.name)
+                st.dataframe(dtypes)
+        
+        # Show data for each columns
+        with col_data: 
+            if st.checkbox("Columns Data"):
+                col = st.selectbox("Column Name", list(df.columns))
+                st.dataframe(df[col])     
+                
+    with Visualization:
+        # Set the page title
+        st.title("Visualise Some Demographics")
+
+        # Create a checkbox to show correlation heatmap
+        with st.expander("Show the correlation heatmap"):
+            st.subheader("Correlation Heatmap")
+            st.image("D:\ML Project\HealthAI Predictive Suit\images\heart\corelation.png")
+        
+        with st.expander("Show Diabetes Count")  : 
+            st.subheader("Target Count Relation")
+            st.image("D://ML Project//HealthAI Predictive Suit//images//heart//target.png")
+
+        with st.expander("Show the Confusion Matrix"):
+            st.subheader("Confusion Matrix")
+            st.image("D:\ML Project\HealthAI Predictive Suit\images\heart\confmatrix.png")
+            
+        with st.expander("Show the Outliers"):
+            st.subheader("Outliers Detection")
+            st.image("D:\ML Project\HealthAI Predictive Suit\images\heart\outliers_1.png")
+            
+        with st.expander("Show the Outliers after removing"):
+            st.subheader("Outliers Detection After Removing")
+            st.image("D://ML Project//HealthAI Predictive Suit//images//heart//outliers_2.png")
+            
+        with st.expander("Show the test data"):
+            st.subheader("Test Data Snipit : Psitive")
+            st.image("D://ML Project//HealthAI Predictive Suit//images//heart//testdata.png")
+            st.subheader("Result")
+            st.image("D://ML Project//HealthAI Predictive Suit//images//heart//result_positive.png")
+                            
 if __name__ == '__main__':
     main()
