@@ -36,7 +36,7 @@ elif(selected == 'Stroke Prediction'):
     utils.stroke.main()    
 else:     
     ## Tabes 
-    home, about, contact, deployment = st.tabs(["Home", "About Us", "Contact Us", "Deployment"])
+    home, about, deployment = st.tabs(["Home", "About Us", "Deployment"])
     
     with home:
         badge(type="twitter", name="aakashmohole")
@@ -125,25 +125,4 @@ else:
                 Together, we can navigate the dynamic landscape of data science and collectively shape a future driven by data-driven insights.
                 """)
         
-        with contact:
-            st.title("Contact Me!")
-            st.write("Have questions or feedback? Fill out the form below and we'll get back to you as soon as possible.")
-            
-            # Create form fields
-            name = st.text_input("Name")
-            email = st.text_input("Email")
-            message = st.text_area("Message")
-            
-            # Submit button
-            if st.button("Submit"):
-                # Perform validation
-                if not name:
-                    st.error("Please enter your name.")
-                elif not email:
-                    st.error("Please enter your email.")
-                elif not message:
-                    st.error("Please enter your message.")
-                else:
-                    # Send the message (you can implement the sending logic here)
-                    st.success("Your message has been sent successfully. We'll get back to you soon.")
-
+        
