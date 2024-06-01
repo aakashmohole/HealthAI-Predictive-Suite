@@ -3,3 +3,7 @@ pickle
 scikit-learn
 streamlit_extras
 streamlit_option_menu
+pandas 
+numpy
+matplotlib
+seaborn
