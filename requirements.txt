@@ -1,4 +1,4 @@
-python 3.7
+
 streamlit 
 scikit-learn
 streamlit_extras
