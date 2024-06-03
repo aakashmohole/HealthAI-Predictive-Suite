@@ -51,4 +51,30 @@ Render is a popular platform for deploying applications due to its numerous adva
 
 <img align="center" src="https://github.com/aakashmohole/HealthAI-Predictive-Suite/blob/main/readme/2.png">
 
-## *Overall, the "HealthAI Predictive Suite" serves as a valuable tool for healthcare practitioners, researchers, and individuals interested in proactive health management.*
+# Setting Up 📲⚙️
+
+To run the web application locally, follow these steps:
+
+Clone this repository
+
+``` bash
+https://github.com/aakashmohole/HealthAI-Predictive-Suite.git
+```
+
+Install the necessary dependencies using 
+
+``` bash
+ pip install -r requirements.txt
+```
+
+Run the Streamlit application using 
+
+``` bash
+streamlit run app.py
+```
+
+Access the application in your web browser at http://localhost:5000.
+
+
+# License
+This project is licensed under the MIT License - see the LICENSE file for details.
