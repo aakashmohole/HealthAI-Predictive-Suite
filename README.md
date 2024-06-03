@@ -4,9 +4,7 @@ How to reach me: Connect with me on Twitter [@Aakash Mohole](https://twitter.com
 ### The "HealthAI Predictive Suite" is an application designed to provide predictive analytics in the field of healthcare.
 It encompasses multiple prediction models aimed at assisting healthcare professionals in making informed decisions and improving patient care. Here's a detailed overview of the application:
 
-🟢 Click on the link to see the Live:
-
-[HealthAI-Predictive-Suite](https://healthai-predictive-suite.onrender.com)
+🟢 Click on the link to see the Live: [HealthAI-Predictive-Suite](https://healthai-predictive-suite.onrender.com)
 
 
 🟢 Click on the image to see the demo video:
