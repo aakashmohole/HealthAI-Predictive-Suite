@@ -180,7 +180,7 @@ def main():
             
         with st.expander("Show the Outliers after removing"):
             st.subheader("Outliers Detection After Removing")
-            st.image("D:/images/hypertension/outliers_2.png")
+            st.image("images/hypertension/outliers_2.png")
             
         with st.expander("Show the test data"):
             st.subheader("Test Data Snipit : Normal")
