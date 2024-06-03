@@ -1,7 +1,16 @@
+How to reach me: Connect with me on Twitter [@Aakash Mohole](https://twitter.com/AakashMohole) | Linkedin [@Aakash Mohole](https://www.linkedin.com/in/aakash-mohole-231359233/)
+
 # 🧠 HealthAI Predictive Suite 👨‍⚕️
-## The "HealthAI Predictive Suite" is an application designed to provide predictive analytics in the field of healthcare.
+### The "HealthAI Predictive Suite" is an application designed to provide predictive analytics in the field of healthcare.
 It encompasses multiple prediction models aimed at assisting healthcare professionals in making informed decisions and improving patient care. Here's a detailed overview of the application:
 
+🟢 Click on the link to see the Live:
+
+[HealthAI-Predictive-Suite](https://healthai-predictive-suite.onrender.com)
+
+
+🟢 Click on the image to see the demo video:
+[![HealthAI-Predictive-Suite](https://github.com/aakashmohole/HealthAI-Predictive-Suite/blob/main/readme/4.png)](https://youtu.be/B40Z6bNNaFw)
 
 
 ## 1. Objective:
@@ -16,24 +25,32 @@ It encompasses multiple prediction models aimed at assisting healthcare professi
 - Users can navigate between different prediction models using a sidebar menu or navigation buttons.
 The sidebar menu displays the list of available prediction models, allowing users to select the desired model for prediction.
 
-## 4. Input Data:
-
-- Each prediction model requires specific input data relevant to the respective health condition.
-Users may need to input demographic information, medical history, lifestyle factors, and other relevant parameters to obtain predictions.
-
-## 5. Prediction Outputs:
-- After providing input data, the application generates predictions indicating the likelihood or risk level of the particular health condition.
-Predictions are presented in a user-friendly format, often accompanied by explanations or recommendations.
-
 # Tools ⚙️
 
 ### Libraries & Framework:
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/Seaborn-%23FF6F00.svg?style=for-the-badge&logo=Seaborn&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![Seaborn](https://img.shields.io/badge/Seaborn-6DA55F?style=for-the-badge&logo=seaborn&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-6DA55F?style=for-the-badge&logo=streamlit&logoColor=white)
+
+### Language:
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+
+
+### Cloud & Containerization:
+
+![Render](https://img.shields.io/badge/render-%234285F4.svg?style=for-the-badge&logo=render&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+
+# Deployment ☁️
+Render is a popular platform for deploying applications due to its numerous advantages that simplify and enhance the deployment process. Here are some key benefits of using Render for deployment:
+
+<img align="center" src="https://github.com/aakashmohole/HealthAI-Predictive-Suite/blob/main/readme/3.png">
+
+<img align="center" src="https://github.com/aakashmohole/HealthAI-Predictive-Suite/blob/main/readme/1.png">
+
+<img align="center" src="https://github.com/aakashmohole/HealthAI-Predictive-Suite/blob/main/readme/2.png">
 
 ## *Overall, the "HealthAI Predictive Suite" serves as a valuable tool for healthcare practitioners, researchers, and individuals interested in proactive health management.*
