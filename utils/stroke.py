@@ -112,7 +112,7 @@ def main():
 
         # Create an expansion option to check the data
         with st.expander("View Raw data"):
-            df = pd.read_csv("D://ML Project//HealthAI Predictive Suit//v1.0//Stroke Prediction//stroke_data.csv")
+            df = pd.read_csv("v1.0/Stroke Prediction/stroke_data.csv")
             st.dataframe(df)
             st.subheader("This Dataset After Preprocessing")
         
@@ -151,25 +151,25 @@ def main():
         # Create a checkbox to show correlation heatmap
         with st.expander("Show the correlation heatmap"):
             st.subheader("Correlation Heatmap")
-            st.image("D:\ML Project\HealthAI Predictive Suit\images\stroke\corelation.png")
+            st.image("images/stroke/corelation.png")
         
         with st.expander("Show Diabetes Count")  : 
             st.subheader("Target Count Relation")
-            st.image("D://ML Project//HealthAI Predictive Suit//images//stroke//stroke.png")
+            st.image("images/stroke/stroke.png")
 
         with st.expander("Show the Confusion Matrix"):
             st.subheader("Confusion Matrix")
-            st.image("D:\ML Project\HealthAI Predictive Suit\images\stroke\confmatrix.png")
+            st.image("images/stroke/confmatrix.png")
             
         with st.expander("Show the Outliers"):
             st.subheader("Outliers Detection")
-            st.image("D:\ML Project\HealthAI Predictive Suit\images\stroke\outliers.png")
+            st.image("images/stroke/outliers.png")
             
         with st.expander("Show the test data"):
             st.subheader("Test Data Snipit : Psitive")
-            st.image("D://ML Project//HealthAI Predictive Suit//images//stroke//testdata.png")
+            st.image("images/stroke/testdata.png")
             st.subheader("Result")
-            st.image("D://ML Project//HealthAI Predictive Suit//images//stroke//result.png")
+            st.image("images/stroke/result.png")
 
 if __name__ == '__main__':
     main()

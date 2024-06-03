@@ -172,7 +172,7 @@ def main():
 
         # Create an expansion option to check the data
         with st.expander("View Raw data"):
-            df = pd.read_csv("D://ML Project//HealthAI Predictive Suit//v1.0//Diabetes Prediction//diabetes_data.csv")
+            df = pd.read_csv("v1.0/Diabetes Prediction/diabetes_data.csv")
             st.dataframe(df)
             st.subheader("This Dataset After Preprocessing")
         
@@ -211,22 +211,22 @@ def main():
         # Create a checkbox to show correlation heatmap
         with st.expander("Show the correlation heatmap"):
             st.subheader("Correlation Heatmap")
-            st.image("D:\ML Project\HealthAI Predictive Suit\images\Diabetes\corelasion.png")
+            st.image("images/Diabetes/corelasion.png")
         
         with st.expander("Show Diabetes Count")  : 
             st.subheader("Diabetes Count Relation")
-            st.image("D:\ML Project\HealthAI Predictive Suit\images\Diabetes\diabetes.png")
+            st.image("images/Diabetes/diabetes.png")
 
         with st.expander("Show the Confusion Matrix"):
             st.subheader("Confusion Matrix")
-            st.image("D:\ML Project\HealthAI Predictive Suit\images\Diabetes\confusionmatrix.png")
+            st.image("images/Diabetes/confusionmatrix.png")
             
         with st.expander("Show the Outliers"):
             st.subheader("Outliers Detection")
-            st.image("D:\ML Project\HealthAI Predictive Suit\images\Diabetes\outliers.png")
+            st.image("images/Diabetes/outliers.png")
             
         with st.expander("Show the Outliers after removing"):
             st.subheader("Outliers Detection After Removing")
-            st.image("D://ML Project//HealthAI Predictive Suit//images//Diabetes//afterremoveoutliers.png")
+            st.image("images/Diabetes/afterremoveoutliers.png")
 if __name__ == '__main__':
     main()

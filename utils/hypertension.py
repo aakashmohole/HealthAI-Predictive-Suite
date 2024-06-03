@@ -125,7 +125,7 @@ def main():
 
         # Create an expansion option to check the data
         with st.expander("View Raw data"):
-            df = pd.read_csv("D://ML Project//HealthAI Predictive Suit//v1.0//Hyper Tension Prediction//hypertension_data.csv")
+            df = pd.read_csv("v1.0/Hyper Tension Prediction/hypertension_data.csv")
             st.dataframe(df)
             st.subheader("This Dataset After Preprocessing")
         
@@ -164,29 +164,29 @@ def main():
         # Create a checkbox to show correlation heatmap
         with st.expander("Show the correlation heatmap"):
             st.subheader("Correlation Heatmap")
-            st.image("D:\ML Project\HealthAI Predictive Suit\images\hypertension\corelation.png")
+            st.image("images/hypertension/corelation.png")
         
         with st.expander("Show Diabetes Count")  : 
             st.subheader("Target Count Relation")
-            st.image("D://ML Project//HealthAI Predictive Suit//images//hypertension//target.png")
+            st.image("D:/images/hypertension/target.png")
 
         with st.expander("Show the Confusion Matrix"):
             st.subheader("Confusion Matrix")
-            st.image("D:\ML Project\HealthAI Predictive Suit\images\hypertension\confmatrix.png")
+            st.image("images/hypertension/confmatrix.png")
             
         with st.expander("Show the Outliers"):
             st.subheader("Outliers Detection")
-            st.image("D:\ML Project\HealthAI Predictive Suit\images\hypertension\outliers_1.png")
+            st.image("images/hypertension/outliers_1.png")
             
         with st.expander("Show the Outliers after removing"):
             st.subheader("Outliers Detection After Removing")
-            st.image("D://ML Project//HealthAI Predictive Suit//images//hypertension//outliers_2.png")
+            st.image("D:/images/hypertension/outliers_2.png")
             
         with st.expander("Show the test data"):
             st.subheader("Test Data Snipit : Normal")
-            st.image("D://ML Project//HealthAI Predictive Suit//images//hypertension//testdata.png")
+            st.image("images/hypertension/testdata.png")
             st.subheader("Result")
-            st.image("D://ML Project//HealthAI Predictive Suit//images//hypertension//result_normal.png")
+            st.image("images/hypertension/result_normal.png")
             
 
 if __name__ == '__main__':

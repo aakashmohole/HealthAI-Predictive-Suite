@@ -127,7 +127,7 @@ def main():
 
         # Create an expansion option to check the data
         with st.expander("View Raw data"):
-            df = pd.read_csv("D://ML Project//HealthAI Predictive Suit//v1.0//Heart Desies prediction//heart.csv")
+            df = pd.read_csv("v1.0/Heart Desies prediction/heart.csv")
             st.dataframe(df)
             st.subheader("This Dataset After Preprocessing")
         
@@ -166,29 +166,29 @@ def main():
         # Create a checkbox to show correlation heatmap
         with st.expander("Show the correlation heatmap"):
             st.subheader("Correlation Heatmap")
-            st.image("D:\ML Project\HealthAI Predictive Suit\images\heart\corelation.png")
+            st.image("images/heart/corelation.png")
         
         with st.expander("Show Diabetes Count")  : 
             st.subheader("Target Count Relation")
-            st.image("D://ML Project//HealthAI Predictive Suit//images//heart//target.png")
+            st.image("images/heart/target.png")
 
         with st.expander("Show the Confusion Matrix"):
             st.subheader("Confusion Matrix")
-            st.image("D:\ML Project\HealthAI Predictive Suit\images\heart\confmatrix.png")
+            st.image("images/heart/confmatrix.png")
             
         with st.expander("Show the Outliers"):
             st.subheader("Outliers Detection")
-            st.image("D:\ML Project\HealthAI Predictive Suit\images\heart\outliers_1.png")
+            st.image("images/heart/outliers_1.png")
             
         with st.expander("Show the Outliers after removing"):
             st.subheader("Outliers Detection After Removing")
-            st.image("D://ML Project//HealthAI Predictive Suit//images//heart//outliers_2.png")
+            st.image("images/heart/outliers_2.png")
             
         with st.expander("Show the test data"):
             st.subheader("Test Data Snipit : Psitive")
-            st.image("D://ML Project//HealthAI Predictive Suit//images//heart//testdata.png")
+            st.image("images/heart/testdata.png")
             st.subheader("Result")
-            st.image("D://ML Project//HealthAI Predictive Suit//images//heart//result_positive.png")
+            st.image("images/heart/result_positive.png")
                             
 if __name__ == '__main__':
     main()

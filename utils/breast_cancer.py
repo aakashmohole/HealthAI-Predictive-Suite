@@ -152,12 +152,12 @@ def main():
 
         # Create an expansion option to check the data
         with st.expander("View Raw data"):
-            df = pd.read_csv("D://ML Project//HealthAI Predictive Suit//v1.0//Breast Cancer Prediction//Breast_Cancer.csv")
+            df = pd.read_csv("v1.0/Breast Cancer Prediction/Breast_Cancer.csv")
             st.dataframe(df)
             st.subheader("This is Raw Dataset Befor Preprocessing")
             
         with st.expander("View Cleaned data"):
-            df_clean= pd.read_csv("D://ML Project//HealthAI Predictive Suit//v1.0//Breast Cancer Prediction//cleaneddata.csv")
+            df_clean= pd.read_csv("v1.0/Breast Cancer Prediction/cleaneddata.csv")
             st.dataframe(df_clean)
             st.subheader("This Dataset After Preprocessing")
         
@@ -196,18 +196,18 @@ def main():
         # Create a checkbox to show correlation heatmap
         with st.expander("Show the correlation heatmap"):
             st.subheader("Correlation Heatmap")
-            st.image("D:\ML Project\HealthAI Predictive Suit\images\Breast Cancer\corelation.png")
+            st.image("images/Breast Cancer/corelation.png")
         
         with st.expander("Show the Dead Alive Count")  : 
             st.subheader(" Dead Alive Relation")
-            st.image("D:\ML Project\HealthAI Predictive Suit\images\Breast Cancer\dead_alive.png")
+            st.image("images/Breast Cancer/dead_alive.png")
 
         with st.expander("Show the Material Status"):
             st.subheader("Material Status")
-            st.image("D:\ML Project\HealthAI Predictive Suit\images\Breast Cancer\material_status.png")
+            st.image("images/Breast Cancer/material_status.png")
             
         with st.expander("Show the Outliers"):
             st.subheader("Outliers Detection")
-            st.image("D:\ML Project\HealthAI Predictive Suit\images\Breast Cancer\outliers.png")
+            st.image("images/Breast Cancer/outliers.png")
 if __name__ == '__main__':
     main()
