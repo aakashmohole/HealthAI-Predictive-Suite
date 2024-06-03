@@ -6,4 +6,4 @@ pandas
 numpy
 matplotlib
 seaborn
-
+fsspec
